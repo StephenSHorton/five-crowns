@@ -25,7 +25,6 @@ export default function App() {
   const [initialLoad, setInitialLoad] = useState(true)
 
   useEffect(() => {
-    console.log(initialLoad)
     if (initialLoad) {
       const unmarshalledState = localStorage.getItem('five_crowns_state')
       if (!unmarshalledState) return
